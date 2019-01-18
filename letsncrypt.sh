@@ -1,3 +1,13 @@
+#!/bin/bash
+#
+# letsncrypt.sh
+#
+# Autor     : Caio Bentes <caio.bentes@solustecnologia.com.br>
+#
+#  -------------------------------------------------------------
+# Este script instala certificado ssl em um site que roda em uma pilha LAMP em Debian 9.6
+#
+
 echo "deb http://ftp.debian.org/debian stretch-backports main" >> /etc/apt/sources.list
 apt update
 apt install python-certbot-apache -t stretch-backports
